@@ -1,0 +1,7 @@
+dist
+loader
+node_modules
+www
+components.d.ts
+readme.md
+.idea

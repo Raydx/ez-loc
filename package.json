@@ -5,18 +5,30 @@
   "description": "Stencil App Starter",
   "scripts": {
     "build": "stencil build",
+    "format": "prettier './**/*.{ts,tsx,js,cjs,css,scss,html,mdx,json}' './*.{ts,cjs,md,json}' --write --cache",
+    "generate": "stencil generate",
+    "lint": "eslint src --ext ts,tsx --fix --cache",
     "start": "stencil build --dev --watch --serve",
-    "test": "stencil test --spec --e2e",
-    "test.watch": "stencil test --spec --e2e --watchAll",
-    "generate": "stencil generate"
+    "watch": "stencil build --watch"
   },
   "devDependencies": {
+    "@ianvs/prettier-plugin-sort-imports": "3.7.2",
     "@stencil-community/router": "^1.0.2",
     "@stencil/core": "latest",
-    "@types/jest": "^27.0.3",
-    "jest": "^27.4.5",
-    "jest-cli": "^27.4.5",
-    "puppeteer": "^10.0.0"
+    "@typescript-eslint/eslint-plugin": "5.57.1",
+    "@typescript-eslint/parser": "5.57.1",
+    "eslint": "^8.42.0",
+    "eslint-define-config": "1.17.0",
+    "eslint-plugin-no-relative-import-paths": "1.5.2",
+    "prettier": "^2.8.8",
+    "prettier-define-config": "1.0.1",
+    "prettier-plugin-package": "1.3.0",
+    "stencil-tailwind-plugin": "^1.8.0",
+    "tailwindcss": "^3.3.2",
+    "typescript": "^5.1.3"
   },
-  "license": "MIT"
+  "license": "MIT",
+  "dependencies": {
+    "@stencil-community/eslint-plugin": "^0.5.0"
+  }
 }

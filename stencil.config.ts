@@ -1,8 +1,11 @@
 import { Config } from '@stencil/core';
+import tailwind, { tailwindHMR } from 'stencil-tailwind-plugin';
 
 // https://stenciljs.com/docs/config
 
 export const config: Config = {
+  namespace: 'ez-loc',
+  plugins: [tailwind(), tailwindHMR()],
   globalStyle: 'src/global/app.css',
   globalScript: 'src/global/app.ts',
   taskQueue: 'async',

@@ -15,7 +15,9 @@ export class AppHome {
         </p>
 
         <stencil-route-link url="/profile/stencil">
-          <button>Profile page</button>
+          <button class="max-w-xs bg-gray-800 rounded-full flex items-center text-sm text-white focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-offset-gray-800 focus:ring-white">
+            Profile page
+          </button>
         </stencil-route-link>
       </div>
     );
