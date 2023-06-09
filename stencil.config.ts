@@ -1,5 +1,6 @@
 import { Config } from '@stencil/core';
 import tailwind, { tailwindHMR } from 'stencil-tailwind-plugin';
+import dotenv from 'rollup-plugin-dotenv';
 
 // https://stenciljs.com/docs/config
 
@@ -17,4 +18,7 @@ export const config: Config = {
       baseUrl: 'https://myapp.local/',
     },
   ],
+  rollupPlugins: {
+    before: [dotenv()],
+  },
 };

@@ -12,8 +12,12 @@
     "noUnusedParameters": true,
     "jsx": "react",
     "jsxFactory": "h",
-    "skipLibCheck": true
+    "skipLibCheck": true,
+    "baseUrl": ".",
+    "paths": {
+      "~/*" : ["src/*"]
+    }
   },
-  "include": ["src"],
+  "include": ["src","stencil.config.ts"],
   "exclude": ["node_modules"]
 }
