@@ -7,8 +7,10 @@ import { MatchResults } from '@stencil-community/router';
   shadow: true,
 })
 export class AppProfile {
+  // eslint-disable-next-line @stencil-community/required-jsdoc
   @Prop() match: MatchResults;
 
+  // eslint-disable-next-line @stencil-community/own-methods-must-be-private
   normalize(name: string): string {
     if (name) {
       return name.substr(0, 1).toUpperCase() + name.substr(1).toLowerCase();

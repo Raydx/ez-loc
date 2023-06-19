@@ -1,5 +1,5 @@
 import { Component, h } from '@stencil/core';
-import  supabase  from '~/config/supabaseClient';
+import supabase from '~/config/supabaseClient';
 
 @Component({
   tag: 'app-home',
@@ -7,7 +7,6 @@ import  supabase  from '~/config/supabaseClient';
   shadow: true,
 })
 export class AppHome {
-
   componentDidLoad() {
     console.log(supabase);
   }
@@ -15,10 +14,9 @@ export class AppHome {
   render() {
     return (
       <div class="app-home">
-        <stencil-route-link url="/profile/stencil">
-          <button class="max-w-xs bg-gray-800 rounded-full flex items-center text-sm text-white focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-offset-gray-800 focus:ring-white">
-            Profile page
-          </button>
+        <stencil-route-link url="/">
+          <app-banner></app-banner>
+          <app-categories></app-categories>
         </stencil-route-link>
       </div>
     );

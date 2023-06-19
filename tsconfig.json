@@ -15,9 +15,9 @@
     "skipLibCheck": true,
     "baseUrl": ".",
     "paths": {
-      "~/*" : ["src/*"]
+      "~/*": ["src/*"]
     }
   },
-  "include": ["src","stencil.config.ts"],
+  "include": ["src", "stencil.config.ts", "tailwind.config.js"],
   "exclude": ["node_modules"]
 }

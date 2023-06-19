@@ -8,22 +8,85 @@ import { HTMLStencilElement, JSXBase } from "@stencil/core/internal";
 import { MatchResults } from "@stencil-community/router";
 export { MatchResults } from "@stencil-community/router";
 export namespace Components {
+    interface AppBanner {
+    }
+    interface AppCategories {
+    }
+    interface AppCopyright {
+    }
+    interface AppHeader {
+    }
     interface AppHome {
+    }
+    interface AppLogement {
+    }
+    interface AppLogin {
     }
     interface AppNav {
     }
     interface AppProfile {
         "match": MatchResults;
     }
+    interface AppRegister {
+        /**
+          * adresse mail
+         */
+        "email": string;
+        /**
+          * password
+         */
+        "password": string;
+        /**
+          * Auth function
+          * @param logs
+         */
+        "signup": (email: string, password: string) => Promise<void>;
+    }
     interface AppRoot {
     }
 }
 declare global {
+    interface HTMLAppBannerElement extends Components.AppBanner, HTMLStencilElement {
+    }
+    var HTMLAppBannerElement: {
+        prototype: HTMLAppBannerElement;
+        new (): HTMLAppBannerElement;
+    };
+    interface HTMLAppCategoriesElement extends Components.AppCategories, HTMLStencilElement {
+    }
+    var HTMLAppCategoriesElement: {
+        prototype: HTMLAppCategoriesElement;
+        new (): HTMLAppCategoriesElement;
+    };
+    interface HTMLAppCopyrightElement extends Components.AppCopyright, HTMLStencilElement {
+    }
+    var HTMLAppCopyrightElement: {
+        prototype: HTMLAppCopyrightElement;
+        new (): HTMLAppCopyrightElement;
+    };
+    interface HTMLAppHeaderElement extends Components.AppHeader, HTMLStencilElement {
+    }
+    var HTMLAppHeaderElement: {
+        prototype: HTMLAppHeaderElement;
+        new (): HTMLAppHeaderElement;
+    };
     interface HTMLAppHomeElement extends Components.AppHome, HTMLStencilElement {
     }
     var HTMLAppHomeElement: {
         prototype: HTMLAppHomeElement;
         new (): HTMLAppHomeElement;
+    };
+    interface HTMLAppLogementElement extends Components.AppLogement, HTMLStencilElement {
+    }
+    var HTMLAppLogementElement: {
+        prototype: HTMLAppLogementElement;
+        new (): HTMLAppLogementElement;
+    };
+    interface HTMLAppLoginElement extends Components.AppLogin, HTMLStencilElement {
+    }
+    var HTMLAppLoginElement: {
+        prototype: HTMLAppLoginElement;
+        new (): HTMLAppLoginElement;
     };
     interface HTMLAppNavElement extends Components.AppNav, HTMLStencilElement {
     }
@@ -37,6 +100,12 @@ declare global {
         prototype: HTMLAppProfileElement;
         new (): HTMLAppProfileElement;
     };
+    interface HTMLAppRegisterElement extends Components.AppRegister, HTMLStencilElement {
+    }
+    var HTMLAppRegisterElement: {
+        prototype: HTMLAppRegisterElement;
+        new (): HTMLAppRegisterElement;
+    };
     interface HTMLAppRootElement extends Components.AppRoot, HTMLStencilElement {
     }
     var HTMLAppRootElement: {
@@ -44,26 +113,62 @@ declare global {
         new (): HTMLAppRootElement;
     };
     interface HTMLElementTagNameMap {
+        "app-banner": HTMLAppBannerElement;
+        "app-categories": HTMLAppCategoriesElement;
+        "app-copyright": HTMLAppCopyrightElement;
+        "app-header": HTMLAppHeaderElement;
         "app-home": HTMLAppHomeElement;
+        "app-logement": HTMLAppLogementElement;
+        "app-login": HTMLAppLoginElement;
         "app-nav": HTMLAppNavElement;
         "app-profile": HTMLAppProfileElement;
+        "app-register": HTMLAppRegisterElement;
         "app-root": HTMLAppRootElement;
     }
 }
 declare namespace LocalJSX {
+    interface AppBanner {
+    }
+    interface AppCategories {
+    }
+    interface AppCopyright {
+    }
+    interface AppHeader {
+    }
     interface AppHome {
+    }
+    interface AppLogement {
+    }
+    interface AppLogin {
     }
     interface AppNav {
     }
     interface AppProfile {
         "match"?: MatchResults;
     }
+    interface AppRegister {
+        /**
+          * adresse mail
+         */
+        "email"?: string;
+        /**
+          * password
+         */
+        "password"?: string;
+    }
     interface AppRoot {
     }
     interface IntrinsicElements {
+        "app-banner": AppBanner;
+        "app-categories": AppCategories;
+        "app-copyright": AppCopyright;
+        "app-header": AppHeader;
         "app-home": AppHome;
+        "app-logement": AppLogement;
+        "app-login": AppLogin;
         "app-nav": AppNav;
         "app-profile": AppProfile;
+        "app-register": AppRegister;
         "app-root": AppRoot;
     }
 }
@@ -71,9 +176,16 @@ export { LocalJSX as JSX };
 declare module "@stencil/core" {
     export namespace JSX {
         interface IntrinsicElements {
+            "app-banner": LocalJSX.AppBanner & JSXBase.HTMLAttributes<HTMLAppBannerElement>;
+            "app-categories": LocalJSX.AppCategories & JSXBase.HTMLAttributes<HTMLAppCategoriesElement>;
+            "app-copyright": LocalJSX.AppCopyright & JSXBase.HTMLAttributes<HTMLAppCopyrightElement>;
+            "app-header": LocalJSX.AppHeader & JSXBase.HTMLAttributes<HTMLAppHeaderElement>;
             "app-home": LocalJSX.AppHome & JSXBase.HTMLAttributes<HTMLAppHomeElement>;
+            "app-logement": LocalJSX.AppLogement & JSXBase.HTMLAttributes<HTMLAppLogementElement>;
+            "app-login": LocalJSX.AppLogin & JSXBase.HTMLAttributes<HTMLAppLoginElement>;
             "app-nav": LocalJSX.AppNav & JSXBase.HTMLAttributes<HTMLAppNavElement>;
             "app-profile": LocalJSX.AppProfile & JSXBase.HTMLAttributes<HTMLAppProfileElement>;
+            "app-register": LocalJSX.AppRegister & JSXBase.HTMLAttributes<HTMLAppRegisterElement>;
             "app-root": LocalJSX.AppRoot & JSXBase.HTMLAttributes<HTMLAppRootElement>;
         }
     }
