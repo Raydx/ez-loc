@@ -17,6 +17,9 @@ dependencies:
   flowbite:
     specifier: ^1.6.5
     version: 1.6.5
+  notiflix:
+    specifier: ^3.2.6
+    version: 3.2.6
 
 devDependencies:
   '@ianvs/prettier-plugin-sort-imports':
@@ -27,10 +30,10 @@ devDependencies:
     version: 1.0.2
   '@stencil/core':
     specifier: latest
-    version: 3.3.1
+    version: 3.4.0
   '@stencil/sass':
     specifier: ^3.0.4
-    version: 3.0.4(@stencil/core@3.3.1)
+    version: 3.0.4(@stencil/core@3.4.0)
   '@tailwindcss/forms':
     specifier: ^0.5.0
     version: 0.5.0(tailwindcss@3.0.23)
@@ -464,18 +467,18 @@ packages:
       '@stencil/state-tunnel': 1.0.1
     dev: true
 
-  /@stencil/core@3.3.1:
-    resolution: {integrity: sha512-I+660Oe9OMLiU+thjV1GgcI27dcvrSpF3xisHWBOU/4mzRtho3YW0cI8lSjcqyB1KirGTA6QeQ0Xif5UHqn8hw==}
+  /@stencil/core@3.4.0:
+    resolution: {integrity: sha512-kEtPtV6QegME8YgMjWrhS7KktItbhqOpAuK9aXypDdI/7bLU9iM/4DtnQGWY/DARBophk+XRBfNXcE62Bmi0dw==}
     engines: {node: '>=14.10.0', npm: '>=6.0.0'}
     hasBin: true
     dev: true
 
-  /@stencil/sass@3.0.4(@stencil/core@3.3.1):
+  /@stencil/sass@3.0.4(@stencil/core@3.4.0):
     resolution: {integrity: sha512-k1dP0A2QBx62m250FATc1hErXxXs6Jnf4TBxdL1C/dc32Kzz2n5aCT4SodBz0ebT5WMnITauZyFqYxzCzDoKag==}
     peerDependencies:
       '@stencil/core': '>=2.0.0 || >=3.0.0-beta.0 || >= 4.0.0-beta.0 || >= 4.0.0'
     dependencies:
-      '@stencil/core': 3.3.1
+      '@stencil/core': 3.4.0
     dev: true
 
   /@stencil/state-tunnel@1.0.1:
@@ -2106,6 +2109,10 @@ packages:
     resolution: {integrity: sha512-DlL+XwOy3NxAQ8xuC0okPgK46iuVNAK01YN7RueYBqqFeGsBjV9XmCAzAdgt+667bCl5kPh9EqKKDwnaPG1I7A==}
     engines: {node: '>=10'}
     dev: true
+
+  /notiflix@3.2.6:
+    resolution: {integrity: sha512-mUoaJ/s9E4r8o1O8XRqcuXEylpgOkfXtI5SEkBBlBK+LK7nq1c6qQaQcF7QzS/S018Ww7uUqSZotOs5cHENvVw==}
+    dev: false
 
   /nth-check@2.1.1:
     resolution: {integrity: sha512-lqjrjmaOoAnWfMmBPL+XNnynZh2+swxiX3WUE0s4yEHI6m+AwrK2UZOimIRl3X/4QctVqS8AiZjFqyOGrMXb/w==}

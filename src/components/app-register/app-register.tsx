@@ -4,7 +4,6 @@
 import { Component, Method, Prop, h } from '@stencil/core';
 import supabase from '~/config/supabaseClient';
 
-
 @Component({
   tag: 'app-register',
   styleUrl: 'app-register.css',
@@ -16,17 +15,15 @@ export class AppRegister {
   /** adresse mail */
   @Prop() email: string;
 
-
   /** password */
   @Prop() password: string;
 
   /**
    * Auth function
-   * @param logs 
+   * @param logs
    */
   @Method()
   async signup(email: string, password: string) {
-
     const { data, error } = await supabase.auth.signUp({
       email: email,
       password: password,
@@ -34,18 +31,17 @@ export class AppRegister {
         emailRedirectTo: 'http://localhost:3333',
       },
     });
-    console.log('data: ' , data, 'error: ', error);
+    console.log('data: ', data, 'error: ', error);
   }
-  
+
   private async handleSubmit(e: Event) {
     e.preventDefault();
 
     const logs = new FormData(this.table);
-    const email = logs.get("email").toString();
-    const password = logs.get("password").toString();
-    await this.signup(email,password);
+    const email = logs.get('email').toString();
+    const password = logs.get('password').toString();
+    await this.signup(email, password);
   }
-
 
   render() {
     return (

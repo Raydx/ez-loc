@@ -1,5 +1,5 @@
 import { Component, h } from '@stencil/core';
-import supabase from '~/config/supabaseClient';
+// import supabase from '~/config/supabaseClient';
 
 @Component({
   tag: 'app-home',
@@ -8,7 +8,7 @@ import supabase from '~/config/supabaseClient';
 })
 export class AppHome {
   componentDidLoad() {
-    console.log(supabase);
+    // console.log(supabase);
   }
 
   render() {

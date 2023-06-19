@@ -14,6 +14,8 @@ export namespace Components {
     }
     interface AppCopyright {
     }
+    interface AppError {
+    }
     interface AppHeader {
     }
     interface AppHome {
@@ -21,8 +23,33 @@ export namespace Components {
     interface AppLogement {
     }
     interface AppLogin {
+        /**
+          * Booléen connecté ou pas
+         */
+        "connexion": boolean;
+        /**
+          * adresse mail
+         */
+        "email": string;
+        /**
+          * password
+         */
+        "password": string;
+        /**
+          * Auth function
+          * @param logs
+         */
+        "signin": (email: string, password: string) => Promise<void>;
     }
     interface AppNav {
+        /**
+          * Booléen connecté ou pas
+         */
+        "connexion": boolean;
+        /**
+          * déconnecte l'utilisateur
+         */
+        "signout": () => Promise<void>;
     }
     interface AppProfile {
         "match": MatchResults;
@@ -63,6 +90,12 @@ declare global {
     var HTMLAppCopyrightElement: {
         prototype: HTMLAppCopyrightElement;
         new (): HTMLAppCopyrightElement;
+    };
+    interface HTMLAppErrorElement extends Components.AppError, HTMLStencilElement {
+    }
+    var HTMLAppErrorElement: {
+        prototype: HTMLAppErrorElement;
+        new (): HTMLAppErrorElement;
     };
     interface HTMLAppHeaderElement extends Components.AppHeader, HTMLStencilElement {
     }
@@ -116,6 +149,7 @@ declare global {
         "app-banner": HTMLAppBannerElement;
         "app-categories": HTMLAppCategoriesElement;
         "app-copyright": HTMLAppCopyrightElement;
+        "app-error": HTMLAppErrorElement;
         "app-header": HTMLAppHeaderElement;
         "app-home": HTMLAppHomeElement;
         "app-logement": HTMLAppLogementElement;
@@ -133,6 +167,8 @@ declare namespace LocalJSX {
     }
     interface AppCopyright {
     }
+    interface AppError {
+    }
     interface AppHeader {
     }
     interface AppHome {
@@ -140,8 +176,24 @@ declare namespace LocalJSX {
     interface AppLogement {
     }
     interface AppLogin {
+        /**
+          * Booléen connecté ou pas
+         */
+        "connexion"?: boolean;
+        /**
+          * adresse mail
+         */
+        "email"?: string;
+        /**
+          * password
+         */
+        "password"?: string;
     }
     interface AppNav {
+        /**
+          * Booléen connecté ou pas
+         */
+        "connexion"?: boolean;
     }
     interface AppProfile {
         "match"?: MatchResults;
@@ -162,6 +214,7 @@ declare namespace LocalJSX {
         "app-banner": AppBanner;
         "app-categories": AppCategories;
         "app-copyright": AppCopyright;
+        "app-error": AppError;
         "app-header": AppHeader;
         "app-home": AppHome;
         "app-logement": AppLogement;
@@ -179,6 +232,7 @@ declare module "@stencil/core" {
             "app-banner": LocalJSX.AppBanner & JSXBase.HTMLAttributes<HTMLAppBannerElement>;
             "app-categories": LocalJSX.AppCategories & JSXBase.HTMLAttributes<HTMLAppCategoriesElement>;
             "app-copyright": LocalJSX.AppCopyright & JSXBase.HTMLAttributes<HTMLAppCopyrightElement>;
+            "app-error": LocalJSX.AppError & JSXBase.HTMLAttributes<HTMLAppErrorElement>;
             "app-header": LocalJSX.AppHeader & JSXBase.HTMLAttributes<HTMLAppHeaderElement>;
             "app-home": LocalJSX.AppHome & JSXBase.HTMLAttributes<HTMLAppHomeElement>;
             "app-logement": LocalJSX.AppLogement & JSXBase.HTMLAttributes<HTMLAppLogementElement>;

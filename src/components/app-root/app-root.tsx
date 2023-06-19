@@ -18,6 +18,7 @@ export class AppRoot {
             <stencil-route url="/login" component="app-login" />
             <stencil-route url="/register" component="app-register" />
             <stencil-route url="/logement" component="app-logement" />
+            <stencil-route url="/error" component="app-error" />
           </stencil-route-switch>
         </stencil-router>
         <app-copyright></app-copyright>
