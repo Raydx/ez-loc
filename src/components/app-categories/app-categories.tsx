@@ -6,7 +6,6 @@ import { Component, h } from '@stencil/core';
 @Component({
   tag: 'app-categories',
   styleUrl: 'app-categories.css',
-  shadow: true,
 })
 export class AppCategories {
   render() {

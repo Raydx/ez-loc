@@ -5,7 +5,6 @@ import { Component, h } from '@stencil/core';
 @Component({
   tag: 'app-error',
   styleUrl: 'app-error.css',
-  shadow: true,
 })
 export class AppError {
   render() {

@@ -89,18 +89,10 @@ export namespace Components {
     }
     interface AppRegister {
         /**
-          * adresse mail
-         */
-        "email": string;
-        /**
-          * password
-         */
-        "password": string;
-        /**
           * Auth function
           * @param logs
          */
-        "signup": (email: string, password: string) => Promise<void>;
+        "signup": (email: string, password: string, confirm: string) => Promise<void>;
     }
     interface AppRoot {
     }
@@ -263,14 +255,6 @@ declare namespace LocalJSX {
         "connexion"?: boolean;
     }
     interface AppRegister {
-        /**
-          * adresse mail
-         */
-        "email"?: string;
-        /**
-          * password
-         */
-        "password"?: string;
     }
     interface AppRoot {
     }

@@ -21,7 +21,6 @@ async function wait(sec: number) {
 @Component({
   tag: 'app-ajoutlogement',
   styleUrl: 'app-ajoutlogement.css',
-  shadow: true,
 })
 export class AppRegister {
   private table: HTMLFormElement;
@@ -140,7 +139,7 @@ export class AppRegister {
             </div>
             <div class="mt-4">
               <button
-                id='submit'
+                id="submit"
                 type="submit"
                 value="save"
                 class="block w-full py-2 text-center text-black bg-or border border-or rounded hover:bg-white hover:text-black transition uppercase font-roboto font-medium"

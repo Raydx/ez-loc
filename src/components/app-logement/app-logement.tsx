@@ -13,7 +13,6 @@ type Logement = {
 @Component({
   tag: 'app-logement',
   styleUrl: 'app-logement.css',
-  shadow: true,
 })
 export class AppLogement {
   /** Array qui reçoit des objets de type Logement */

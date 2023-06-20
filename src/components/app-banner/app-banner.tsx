@@ -6,7 +6,6 @@ import { Component, h } from '@stencil/core';
 @Component({
   tag: 'app-banner',
   styleUrl: 'app-banner.css',
-  shadow: true,
 })
 export class AppBanner {
   render() {

@@ -6,7 +6,6 @@ import { Component, h } from '@stencil/core';
 @Component({
   tag: 'app-copyright',
   styleUrl: 'app-copyright.css',
-  shadow: true,
 })
 export class AppCopyright {
   render() {
