@@ -1,14 +1,16 @@
 # EZLoc FRENCH VERSION
 
-Projet réalisé dans le cadre de la soutenance front/back pour la formation CDA.              
+Projet réalisé dans le cadre de la soutenance front/back pour la formation CDA.         
+                   
 Il s'agit d'un site de location, avec une création de compte, une authentification, une création d'articles ainsi qu'une consultation de ces derniers.              
 
-Les technologies utilisées afin de réaliser ce projet sont :              
-    - StencilJS (https://stenciljs.com/docs/introduction)              
-    - Supabase (PostGreSQL) (https://supabase.com/docs)                      
-    - Tailwind (https://tailwindcss.com/docs/installation) ou (https://flowbite.com/docs/getting-started/introduction/)              
-    - Notiflix (https://github.com/notiflix/Notiflix)              
-    - FontAwesome (https://fontawesome.com/docs)              
+Les technologies utilisées afin de réaliser ce projet sont :        
+                    
+   > - StencilJS (https://stenciljs.com/docs/introduction)              
+   > - Supabase (PostGreSQL) (https://supabase.com/docs)                      
+   > - Tailwind (https://tailwindcss.com/docs/installation) ou (https://flowbite.com/docs/getting-started/introduction/)              
+   > - Notiflix (https://github.com/notiflix/Notiflix)              
+   >- FontAwesome (https://fontawesome.com/docs)              
 
 
 ## Commencer
@@ -48,15 +50,17 @@ npm i Prettier
 
 # EZLoc ENGLISH VERSION
 
-Project carried out as part of the front/back presentation for the CDA training program.       
+Project carried out as part of the front/back presentation for the CDA training program.  
+                   
 This is a rental website, featuring account creation, authentication, article creation, and article browsing.       
 
 The technologies used to develop this project are:       
-    - StencilJS (https://stenciljs.com/docs/introduction)      
-    - Supabase (PostGreSQL) (https://supabase.com/docs)     
-    - Tailwind (https://tailwindcss.com/docs/installation) or (https://flowbite.com/docs/getting-started/introduction/)      
-    - Notiflix (https://github.com/notiflix/Notiflix)       
-    - FontAwesome (https://fontawesome.com/docs)       
+              
+   > - StencilJS (https://stenciljs.com/docs/introduction)      
+   > - Supabase (PostGreSQL) (https://supabase.com/docs)     
+   > - Tailwind (https://tailwindcss.com/docs/installation) or (https://flowbite.com/docs/getting-started/introduction/)      
+   > - Notiflix (https://github.com/notiflix/Notiflix)       
+   > - FontAwesome (https://fontawesome.com/docs)       
 ## Getting Started
 
 Download the code or pull it from github.              
