@@ -21,6 +21,7 @@ git init
 git pull https://github.com/Raydx/ez-loc
 ```
 
+Installez les dépendances :       
 
 ```bash
 npm i
@@ -68,8 +69,14 @@ The technologies used to develop this project are:
    > - FontAwesome (https://fontawesome.com/docs)       
 ## Getting Started
 
-Download the code or pull it from github.              
+Download the code or pull it from github.      
 
+```bash
+git init
+git pull https://github.com/Raydx/ez-loc
+```
+
+Install dependencies :        
 ```bash
 npm i
 ```

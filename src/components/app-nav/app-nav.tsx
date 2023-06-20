@@ -58,17 +58,17 @@ export class AppNav {
 
             <div class="flex items-center justify-between flex-grow md:pl-12 py-5">
               <div class="flex items-center space-x-6 capitalize">
-                <a href="/" class="text-gray-200 hover:text-white transition">
+                <a href="/" class="text-gray-200 hover:text-white transition hover:underline">
                   Accueil
                 </a>
-                <a href="/logement" class="text-gray-200 hover:text-white transition">
+                <a href="/logement" class="text-gray-200 hover:text-white transition hover:underline">
                   Logements
                 </a>
-                <a href="/error" class="text-gray-200 hover:text-white transition">
+                <a href="/error" class="text-gray-200 hover:text-white transition hover:underline">
                   Support
                 </a>
               </div>
-              <a href="/login" class="text-gray-200 hover:text-white transition">
+              <a href="/login" class="text-gray-200 hover:text-white transition hover:underline">
                 Connexion
               </a>
             </div>
@@ -103,20 +103,20 @@ export class AppNav {
 
             <div class="flex items-center justify-between flex-grow md:pl-12 py-5">
               <div class="flex items-center space-x-6 capitalize">
-                <a href="/" class="text-gray-200 hover:text-white transition">
+                <a href="/" class="text-gray-200 hover:text-white transition hover:underline">
                   Accueil
                 </a>
-                <a href="/logement" class="text-gray-200 hover:text-white transition">
+                <a href="/logement" class="text-gray-200 hover:text-white transition hover:underline">
                   Logements
                 </a>
-                <a href="/ajoutLogement" class="text-gray-200 hover:text-white transition">
+                <a href="/ajoutLogement" class="text-gray-200 hover:text-white transition hover:underline">
                   Proposer un logement
                 </a>
-                <a href="/error" class="text-gray-200 hover:text-white transition">
+                <a href="/error" class="text-gray-200 hover:text-white transition hover:underline">
                   Support
                 </a>
               </div>
-              <button class="text-gray-200 hover:text-white transition" onClick={() => void this.signout()}>
+              <button class="text-gray-200 hover:text-white transition hover:underline" onClick={() => void this.signout()}>
                 Déconnexion
               </button>
             </div>

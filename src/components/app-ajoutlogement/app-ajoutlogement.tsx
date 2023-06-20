@@ -41,6 +41,7 @@ export class AppRegister {
   /** type de logement */
   @Prop() type_logement: string;
 
+  /** Methode qui permet d'envoyer les données passées en argument à Supabase et de les insérer dans la table */
   @Method()
   async addLogement(nom: string, email: string, rue: string, cp: string, ville: string, Descriptif: string) {
     const { data, error } = await supabase.from('Logement').insert([
@@ -72,7 +73,7 @@ export class AppRegister {
 
     Notify.success('Votre annonce à bien été publiée.');
     await wait(2000);
-    // window.location.href = '/logement';
+    window.location.href = '/logement';
   }
 
   render() {
@@ -139,6 +140,7 @@ export class AppRegister {
             </div>
             <div class="mt-4">
               <button
+                id='submit'
                 type="submit"
                 value="save"
                 class="block w-full py-2 text-center text-black bg-or border border-or rounded hover:bg-white hover:text-black transition uppercase font-roboto font-medium"

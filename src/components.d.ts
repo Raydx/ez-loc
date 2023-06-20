@@ -7,6 +7,9 @@
 import { HTMLStencilElement, JSXBase } from "@stencil/core/internal";
 export namespace Components {
     interface AppAjoutlogement {
+        /**
+          * Methode qui permet d'envoyer les données passées en argument à Supabase et de les insérer dans la table
+         */
         "addLogement": (nom: string, email: string, rue: string, cp: string, ville: string, Descriptif: string) => Promise<void>;
         /**
           * code postal
@@ -50,8 +53,10 @@ export namespace Components {
     interface AppHome {
     }
     interface AppLogement {
-        "Logement": any;
-        "logements": { nom: string; email: string; rue: string; code_postal: string; ville: string; descriptif: string };
+        /**
+          * Array qui reçoit des objets de type Logement
+         */
+        "logements": Array<Logement>;
     }
     interface AppLogin {
         /**
@@ -232,8 +237,10 @@ declare namespace LocalJSX {
     interface AppHome {
     }
     interface AppLogement {
-        "Logement"?: any;
-        "logements"?: { nom: string; email: string; rue: string; code_postal: string; ville: string; descriptif: string };
+        /**
+          * Array qui reçoit des objets de type Logement
+         */
+        "logements"?: Array<Logement>;
     }
     interface AppLogin {
         /**

@@ -23,10 +23,10 @@ export class AppHeader {
 
           <div class="flex items-center space-x-4">
             <a href="/error" class="text-center text-gray-700 hover:text-primary transition relative">
-              <div class="text-2xl">
+              <div class="text-2xl cursor-not-allowed">
                 <i class="fa-regular fa-user"></i>
               </div>
-              <div class="text-xs leading-3">Compte</div>
+              <div class="text-xs leading-3 cursor-not-allowed">Compte</div>
             </a>
           </div>
         </div>
