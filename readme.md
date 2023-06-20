@@ -1,22 +1,71 @@
-# Stencil App Starter
+# EZLoc FRENCH VERSION
 
-Stencil is a compiler for building fast web apps using Web Components.
+Projet réalisé dans le cadre de la soutenance front/back pour la formation CDA.
+Il s'agit d'un site de location, avec une création de compte, une authentification, une création d'articles ainsi qu'une consultation de ces derniers.
 
-Stencil combines the best concepts of the most popular frontend frameworks into a compile-time rather than run-time tool.  Stencil takes TypeScript, JSX, a tiny virtual DOM layer, efficient one-way data binding, an asynchronous rendering pipeline (similar to React Fiber), and lazy-loading out of the box, and generates 100% standards-based Web Components that run in any browser supporting the Custom Elements v1 spec.
+Les technologies utilisées afin de réaliser ce projet sont :
+    - StencilJS (https://stenciljs.com/docs/introduction)
+    - Supabase (PostGreSQL) (https://supabase.com/docs)
+    - Tailwind (https://tailwindcss.com/docs/installation) or (https://flowbite.com/docs/getting-started/introduction/)
+    - Notiflix (https://github.com/notiflix/Notiflix)
+    - FontAwesome (https://fontawesome.com/docs)
 
-Stencil components are just Web Components, so they work in any major framework or with no framework at all. In many cases, Stencil can be used as a drop in replacement for traditional frontend frameworks given the capabilities now available in the browser, though using it as such is certainly not required.
 
-Stencil also enables a number of key capabilities on top of Web Components, in particular Server Side Rendering (SSR) without the need to run a headless browser, pre-rendering, and objects-as-properties (instead of just strings).
+## Commencer
 
-## Getting Started
-
-To start a new project using Stencil, clone this repo to a new directory:
+Téléchargez le zip ou faites directement un git pull.
 
 ```bash
-npm init stencil app
+npm i
 ```
 
-and run:
+et lancez le serveur :
+
+```bash
+npm start
+```
+
+Pour simplement build l'application, utilisez :
+
+```bash
+npm run build
+```
+
+Pour utiliser la base de données vous aurez besoin de configurer un .env avec :             (https://supabase.com/docs/guides/api/creating-routes#rest-api)
+```
+SUPABASE_URL = ''
+SUPABASE_KEY = ''
+```
+
+Pour plus de confort de développement je recommande d'utiliser ESLint ainsi que Prettier.
+
+```bash
+npm i ESLint
+```
+```bash
+npm i Prettier
+```
+
+# EZLoc ENGLISH VERSION
+
+Project carried out as part of the front/back presentation for the CDA training program.
+This is a rental website, featuring account creation, authentication, article creation, and article browsing.
+
+The technologies used to develop this project are:
+    - StencilJS (https://stenciljs.com/docs/introduction)
+    - Supabase (PostGreSQL) (https://supabase.com/docs)
+    - Tailwind (https://tailwindcss.com/docs/installation) or (https://flowbite.com/docs/getting-started/introduction/)
+    - Notiflix (https://github.com/notiflix/Notiflix)
+    - FontAwesome (https://fontawesome.com/docs)
+## Getting Started
+
+Download the code or pull it from github.
+
+```bash
+npm i
+```
+
+and run the server:
 
 ```bash
 npm start
@@ -28,14 +77,17 @@ To build the app for production, run:
 npm run build
 ```
 
-To run the unit tests once, run:
-
+To use the database, you will need to configure a .env file with the following:             (https://supabase.com/docs/guides/api/creating-routes#rest-api)
 ```
-npm test
+SUPABASE_URL = ''
+SUPABASE_KEY = ''
 ```
 
-To run the unit tests and watch for file changes during development, run:
+For enhanced development convenience, I recommend using ESLint and Prettier.
 
+```bash
+npm i ESLint
 ```
-npm run test.watch
+```bash
+npm i Prettier
 ```
