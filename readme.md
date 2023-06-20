@@ -15,7 +15,12 @@ Les technologies utilisées afin de réaliser ce projet sont :
 
 ## Commencer
 
-Téléchargez le zip ou faites directement un git pull.              
+Téléchargez le zip ou faites directement un git pull.  
+```bash
+git init
+git pull https://github.com/Raydx/ez-loc
+```
+
 
 ```bash
 npm i
