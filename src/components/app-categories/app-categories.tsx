@@ -17,7 +17,7 @@ export class AppCategories {
           <div class="relative rounded-sm overflow-hidden group">
             <img src="assets/icon/studio.jpg" alt="category 1" class="w-full"></img>
             <a
-              href="#"
+              href="/logement"
               class="absolute inset-0 bg-black bg-opacity-40 flex items-center justify-center text-xl text-white font-roboto font-medium group-hover:bg-opacity-60 transition"
             >
               Studio
@@ -26,7 +26,7 @@ export class AppCategories {
           <div class="relative rounded-sm overflow-hidden group">
             <img src="assets/icon/appartement.jpg" alt="category 1" class="w-full"></img>
             <a
-              href="#"
+              href="/logement"
               class="absolute inset-0 bg-black bg-opacity-40 flex items-center justify-center text-xl text-white font-roboto font-medium group-hover:bg-opacity-60 transition"
             >
               Appartement
@@ -35,7 +35,7 @@ export class AppCategories {
           <div class="relative rounded-sm overflow-hidden group">
             <img src="assets/icon/maison.jpg" alt="category 1" class="w-full"></img>
             <a
-              href="#"
+              href="/logement"
               class="absolute inset-0 bg-black bg-opacity-40 flex items-center justify-center text-xl text-white font-roboto font-medium group-hover:bg-opacity-60 transition"
             >
               Maison

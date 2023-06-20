@@ -47,12 +47,12 @@ export class AppRegister {
     return (
       <div class="contain py-16">
         <div class="max-w-lg mx-auto shadow px-6 py-7 rounded overflow-hidden">
-          <h2 class="text-2xl uppercase font-medium mb-1">Create an account</h2>
-          <p class="text-gray-600 mb-6 text-sm">Register for new costumer</p>
+          <h2 class="text-2xl uppercase font-medium mb-1">Créer un compte</h2>
+          <p class="text-gray-600 mb-6 text-sm">Formulaire d'inscription</p>
           <form action="#" method="post" autocomplete="off" id="form" ref={el => (this.table = el)} onSubmit={e => this.handleSubmit(e)}>
             <div class="space-y-2">
               <div>
-                <label class="text-gray-600 mb-2 block">Email address</label>
+                <label class="text-gray-600 mb-2 block">Adresse email</label>
                 <input
                   type="email"
                   name="email"
@@ -62,7 +62,7 @@ export class AppRegister {
                 ></input>
               </div>
               <div>
-                <label class="text-gray-600 mb-2 block">Password</label>
+                <label class="text-gray-600 mb-2 block">Mot de passe</label>
                 <input
                   type="password"
                   name="password"
@@ -72,7 +72,7 @@ export class AppRegister {
                 ></input>
               </div>
               <div>
-                <label class="text-gray-600 mb-2 block">Confirm password</label>
+                <label class="text-gray-600 mb-2 block">Confirmer le mot de passe</label>
                 <input
                   type="password"
                   name="confirm"
@@ -85,10 +85,10 @@ export class AppRegister {
             <div class="mt-6">
               <div class="flex items-center">
                 <input type="checkbox" name="aggrement" id="aggrement" class="text-primary focus:ring-0 rounded-sm cursor-pointer"></input>
-                <label class="text-gray-600 ml-3 cursor-pointer">
-                  I have read and agree to the{' '}
-                  <a href="#" class="text-primary">
-                    terms & conditions
+                <label class="text-gray-600 ml-3 cursor-pointer underline">
+                  J'ai lu et accepté les{' '}
+                  <a href="#" class="text-primary underline">
+                    conditions d'utilisation
                   </a>
                 </label>
               </div>
@@ -99,15 +99,15 @@ export class AppRegister {
                 value="save"
                 class="block w-full py-2 text-center text-black bg-or border border-or rounded hover:bg-white hover:text-black transition uppercase font-roboto font-medium"
               >
-                create account
+                Créer mon compte
               </button>
             </div>
           </form>
 
           <p class="mt-4 text-center text-gray-600">
-            Already have account?{' '}
+            Vous possédez déjà un compte?{' '}
             <a href="/login" class="text-primary">
-              Login now
+              Se connecter
             </a>
           </p>
         </div>

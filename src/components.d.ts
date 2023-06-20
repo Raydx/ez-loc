@@ -5,9 +5,38 @@
  * It contains typing information for all components that exist in this project.
  */
 import { HTMLStencilElement, JSXBase } from "@stencil/core/internal";
-import { MatchResults } from "@stencil-community/router";
-export { MatchResults } from "@stencil-community/router";
 export namespace Components {
+    interface AppAjoutlogement {
+        "addLogement": (nom: string, email: string, rue: string, cp: string, ville: string, Descriptif: string) => Promise<void>;
+        /**
+          * code postal
+         */
+        "cp": string;
+        /**
+          * descriptif
+         */
+        "descriptif": string;
+        /**
+          * adresse mail
+         */
+        "email": string;
+        /**
+          * password
+         */
+        "password": string;
+        /**
+          * rue
+         */
+        "rue": string;
+        /**
+          * type de logement
+         */
+        "type_logement": string;
+        /**
+          * ville
+         */
+        "ville": string;
+    }
     interface AppBanner {
     }
     interface AppCategories {
@@ -21,6 +50,8 @@ export namespace Components {
     interface AppHome {
     }
     interface AppLogement {
+        "Logement": any;
+        "logements": { nom: string; email: string; rue: string; code_postal: string; ville: string; descriptif: string };
     }
     interface AppLogin {
         /**
@@ -51,9 +82,6 @@ export namespace Components {
          */
         "signout": () => Promise<void>;
     }
-    interface AppProfile {
-        "match": MatchResults;
-    }
     interface AppRegister {
         /**
           * adresse mail
@@ -73,6 +101,12 @@ export namespace Components {
     }
 }
 declare global {
+    interface HTMLAppAjoutlogementElement extends Components.AppAjoutlogement, HTMLStencilElement {
+    }
+    var HTMLAppAjoutlogementElement: {
+        prototype: HTMLAppAjoutlogementElement;
+        new (): HTMLAppAjoutlogementElement;
+    };
     interface HTMLAppBannerElement extends Components.AppBanner, HTMLStencilElement {
     }
     var HTMLAppBannerElement: {
@@ -127,12 +161,6 @@ declare global {
         prototype: HTMLAppNavElement;
         new (): HTMLAppNavElement;
     };
-    interface HTMLAppProfileElement extends Components.AppProfile, HTMLStencilElement {
-    }
-    var HTMLAppProfileElement: {
-        prototype: HTMLAppProfileElement;
-        new (): HTMLAppProfileElement;
-    };
     interface HTMLAppRegisterElement extends Components.AppRegister, HTMLStencilElement {
     }
     var HTMLAppRegisterElement: {
@@ -146,6 +174,7 @@ declare global {
         new (): HTMLAppRootElement;
     };
     interface HTMLElementTagNameMap {
+        "app-ajoutlogement": HTMLAppAjoutlogementElement;
         "app-banner": HTMLAppBannerElement;
         "app-categories": HTMLAppCategoriesElement;
         "app-copyright": HTMLAppCopyrightElement;
@@ -155,12 +184,41 @@ declare global {
         "app-logement": HTMLAppLogementElement;
         "app-login": HTMLAppLoginElement;
         "app-nav": HTMLAppNavElement;
-        "app-profile": HTMLAppProfileElement;
         "app-register": HTMLAppRegisterElement;
         "app-root": HTMLAppRootElement;
     }
 }
 declare namespace LocalJSX {
+    interface AppAjoutlogement {
+        /**
+          * code postal
+         */
+        "cp"?: string;
+        /**
+          * descriptif
+         */
+        "descriptif"?: string;
+        /**
+          * adresse mail
+         */
+        "email"?: string;
+        /**
+          * password
+         */
+        "password"?: string;
+        /**
+          * rue
+         */
+        "rue"?: string;
+        /**
+          * type de logement
+         */
+        "type_logement"?: string;
+        /**
+          * ville
+         */
+        "ville"?: string;
+    }
     interface AppBanner {
     }
     interface AppCategories {
@@ -174,6 +232,8 @@ declare namespace LocalJSX {
     interface AppHome {
     }
     interface AppLogement {
+        "Logement"?: any;
+        "logements"?: { nom: string; email: string; rue: string; code_postal: string; ville: string; descriptif: string };
     }
     interface AppLogin {
         /**
@@ -195,9 +255,6 @@ declare namespace LocalJSX {
          */
         "connexion"?: boolean;
     }
-    interface AppProfile {
-        "match"?: MatchResults;
-    }
     interface AppRegister {
         /**
           * adresse mail
@@ -211,6 +268,7 @@ declare namespace LocalJSX {
     interface AppRoot {
     }
     interface IntrinsicElements {
+        "app-ajoutlogement": AppAjoutlogement;
         "app-banner": AppBanner;
         "app-categories": AppCategories;
         "app-copyright": AppCopyright;
@@ -220,7 +278,6 @@ declare namespace LocalJSX {
         "app-logement": AppLogement;
         "app-login": AppLogin;
         "app-nav": AppNav;
-        "app-profile": AppProfile;
         "app-register": AppRegister;
         "app-root": AppRoot;
     }
@@ -229,6 +286,7 @@ export { LocalJSX as JSX };
 declare module "@stencil/core" {
     export namespace JSX {
         interface IntrinsicElements {
+            "app-ajoutlogement": LocalJSX.AppAjoutlogement & JSXBase.HTMLAttributes<HTMLAppAjoutlogementElement>;
             "app-banner": LocalJSX.AppBanner & JSXBase.HTMLAttributes<HTMLAppBannerElement>;
             "app-categories": LocalJSX.AppCategories & JSXBase.HTMLAttributes<HTMLAppCategoriesElement>;
             "app-copyright": LocalJSX.AppCopyright & JSXBase.HTMLAttributes<HTMLAppCopyrightElement>;
@@ -238,7 +296,6 @@ declare module "@stencil/core" {
             "app-logement": LocalJSX.AppLogement & JSXBase.HTMLAttributes<HTMLAppLogementElement>;
             "app-login": LocalJSX.AppLogin & JSXBase.HTMLAttributes<HTMLAppLoginElement>;
             "app-nav": LocalJSX.AppNav & JSXBase.HTMLAttributes<HTMLAppNavElement>;
-            "app-profile": LocalJSX.AppProfile & JSXBase.HTMLAttributes<HTMLAppProfileElement>;
             "app-register": LocalJSX.AppRegister & JSXBase.HTMLAttributes<HTMLAppRegisterElement>;
             "app-root": LocalJSX.AppRoot & JSXBase.HTMLAttributes<HTMLAppRootElement>;
         }

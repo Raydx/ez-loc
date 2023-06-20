@@ -86,15 +86,15 @@ export class AppNav {
               <span class="capitalize ml-2 text-white hidden">All Categories</span>
 
               <div class="absolute w-full left-0 min-w-max top-full bg-white shadow-md py-3 divide-y divide-gray-300 divide-dashed opacity-0 group-hover:opacity-100 transition duration-300 invisible group-hover:visible">
-                <a href="/" class="flex items-center px-6 py-3 pr-2 hover:bg-gray-100 transition">
+                <a href="/logement" class="flex items-center px-6 py-3 pr-2 hover:bg-gray-100 transition">
                   <img src="assets/icon/house.svg" alt="maison" class="pl-2 w-7 h-7 object-contain"></img>
                   <span class="ml-6 text-gray-600 text-sm">Maison</span>
                 </a>
-                <a href="#" class="flex items-center px-6 py-3 hover:bg-gray-100 transition">
+                <a href="/logement" class="flex items-center px-6 py-3 hover:bg-gray-100 transition">
                   <img src="assets/icon/appartment.svg" alt="Appartement" class="pl-2 w-7 h-7 object-contain"></img>
                   <span class="ml-6 text-gray-600 text-sm">Appartement</span>
                 </a>
-                <a href="#" class="flex items-center px-6 py-3 hover:bg-gray-100 transition">
+                <a href="/logement" class="flex items-center px-6 py-3 hover:bg-gray-100 transition">
                   <img src="assets/icon/studio.svg" alt="Studio" class="pl-2 w-7 h-7 object-contain"></img>
                   <span class="ml-6 text-gray-600 text-sm">Studio</span>
                 </a>
@@ -108,6 +108,9 @@ export class AppNav {
                 </a>
                 <a href="/logement" class="text-gray-200 hover:text-white transition">
                   Logements
+                </a>
+                <a href="/ajoutLogement" class="text-gray-200 hover:text-white transition">
+                  Proposer un logement
                 </a>
                 <a href="/error" class="text-gray-200 hover:text-white transition">
                   Support

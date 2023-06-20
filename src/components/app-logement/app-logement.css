@@ -1,0 +1,7 @@
+.row {
+  display: flex;
+  flex-wrap: wrap;
+}
+.border-or {
+  border-color: #ff5700;
+}
